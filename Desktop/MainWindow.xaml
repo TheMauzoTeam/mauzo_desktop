@@ -112,7 +112,7 @@
                             </StackPanel>
                             <Grid>
                                 <TextBlock x:Name="TotalCost" FontSize="24" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Text="Total: 0.00€"/>
-                                <Button Content="Vender" Click="SaleButton" Background="{x:Null}" Height="30" Margin="0,20,0,0" HorizontalAlignment="Right" Width="100" VerticalAlignment="Bottom"/>
+                                <Button Content="Vender" Click="SaleButton" Background="#FF10893E" Height="30" Margin="0,20,0,0" HorizontalAlignment="Right" Width="100" VerticalAlignment="Bottom" Foreground="White" BorderBrush="#FF10893E" BorderThickness="2"/>
                             </Grid>
                         </StackPanel>
                     </Grid>
@@ -130,22 +130,18 @@
         <Border x:Name="MasterGrid">
             <Grid>
                 <Border Background="{StaticResource MasterBackgroundColor}" BorderThickness="1" Grid.Row="0" Grid.Column="0">
-                    <Grid Height="40" VerticalAlignment="Top" >
-                        <TextBox TextChanged="SalesSearch_TextChanged" Foreground="{StaticResource MasterForegroundColor}" GotKeyboardFocus="TextBox_GotFocus" GotMouseCapture="TextBox_GotFocus" Text="Buscar..." VerticalContentAlignment="Center" FontSize="14" Margin="5,5,102,5" BorderThickness="1,1,0,1"/>
-                        <Button Foreground="White" FontFamily="Segoe MDL2 Assets" Content="&#xE71E;" Margin="146,5,72,5">
-                            <Button.Background>
-                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-                            </Button.Background>
-                        </Button>
-                        <Button Background="#00000000" Foreground="Black" FontFamily="Segoe MDL2 Assets" Content="&#xE713;" Margin="215,5,5,5" BorderBrush="#00707070" Click="Button_Settings" FontSize="18"/>
-                        <Button Background="#00000000" Foreground="Black" FontFamily="Segoe MDL2 Assets" Content="&#xE72C;" Margin="182,5,38,5" BorderBrush="#00707070" Click="Button_Update" FontSize="18"/>
+                    <Grid Height="40" VerticalAlignment="Top" Background="#FF0078D7" >
+                        <TextBox TextChanged="SalesSearch_TextChanged" Foreground="White" GotKeyboardFocus="TextBox_GotFocus" GotMouseCapture="TextBox_GotFocus" Text="Buscar..." VerticalContentAlignment="Center" FontSize="14" Margin="5,5,102,5" BorderThickness="0" Background="#3F000000"/>
+                        <Button Foreground="White" FontFamily="Segoe MDL2 Assets" Content="&#xE71E;" Margin="146,5,72,5" Background="#3F000000" BorderThickness="0"/>
+                        <Button Background="#00000000" Foreground="White" FontFamily="Segoe MDL2 Assets" Content="&#xE895;" Margin="182,5,38,5" BorderBrush="#00707070" Click="Button_Update" FontSize="18"/>
+                        <Button Background="#00000000" Foreground="White" FontFamily="Segoe MDL2 Assets" Content="&#xE712;" Margin="215,5,5,5" BorderBrush="#00707070" Click="Button_Settings" FontSize="18"/>
                     </Grid>
                 </Border>
-                <ListBox Name="ActivityList" Background="{StaticResource MasterBackgroundColor}" Foreground="{StaticResource MasterForegroundColor}" BorderThickness="0" HorizontalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="0,40" Grid.Row="0" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged">
+                <ListBox Name="ActivityList" Background="{StaticResource MasterBackgroundColor}" Foreground="{StaticResource MasterForegroundColor}" BorderThickness="0" HorizontalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="0,40,0,45" Grid.Row="0" Grid.Column="0" SelectionChanged="ListBox_SelectionChanged">
                 </ListBox>
-                <Button BorderThickness="0" Foreground="White" Content="Nuevo" Height="40" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" FontSize="14" Click="Button_New">
+                <Button BorderThickness="3" Foreground="#FF0078D7" Content="Nuevo" Height="45" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" FontSize="14" Click="Button_New" BorderBrush="#FF0078D7">
                     <Button.Background>
-                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                        <SolidColorBrush Color="White"/>
                     </Button.Background>
                 </Button>
             </Grid>
