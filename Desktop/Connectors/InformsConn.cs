@@ -80,6 +80,8 @@ namespace Desktop.Connectors
             IRestClient client = new RestClient(baseUrl);
             IRestRequest request = new RestRequest(Method.GET);
 
+            // FIXME: 08/06/2020 Sólo un detalle, ..., si no recuerdo mal, pero puede que recuerde mal, ..., Authorization
+            // debería ir en base64, esto es así?
             request.AddHeader("Authorization", token); // Agregamos la autorización de token en el header.
 
             IRestResponse response = client.Execute(request); // Ejecutamos la petición.

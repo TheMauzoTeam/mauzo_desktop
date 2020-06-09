@@ -20,6 +20,7 @@ namespace Desktop.Views.Dialogs
         /// Constructor para crear la interfaz
         /// </summary>
         /// <param name="message"></param>
+        // FIXME: 08/06/2020 Podriais haberla separado un poco
         public Info(string message)
         {
             //Creamos la ventana

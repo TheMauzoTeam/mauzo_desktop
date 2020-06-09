@@ -40,6 +40,7 @@ namespace Desktop.Templates
         /// </summary>
         public int Id
         {
+            // FIXME: 08/06/2020 Sabéis lo que estáis haciendo aquí, no?
             get => id;
             set => id = value;
         }

@@ -46,6 +46,7 @@ namespace Desktop.Views.Dialogs
         /// </summary>
         /// <param name="advice">Mensaje de advertencia</param>
         /// <param name="answer">Pregunta a confirmar</param>
+        // FIXME: 08/06/2020 Podriais haberla separado un poco
         public Warning(string advice, string answer)
         {
             // Definimos la ventana.

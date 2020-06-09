@@ -25,6 +25,7 @@ using System;
 
 namespace Desktop.Exceptions
 {
+    // FIXME: 08/06/2020 Supongo que esta clase es de Lidia, no?
     class NotFoundException : Exception
     {
         public NotFoundException(string message) : base(message) { }

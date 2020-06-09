@@ -10,6 +10,8 @@
 
 namespace Desktop.Properties
 {
+    // FIXME: 08/06/2020 No sé si esta es la mejor manera de hacer lo de los recursos, ..., pero por mi desconocimiento
+    // ¿Hbéis investigado al respecto?
 
 
     // Tenéis que hablarme de esto en clase

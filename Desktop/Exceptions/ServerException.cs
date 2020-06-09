@@ -25,6 +25,7 @@ using System;
 
 namespace Desktop.Exceptions
 {
+    // FIXME: 08/06/2020 Es de Lidia?
     class ServerException : Exception
     {
         public ServerException(string message) : base(message) { }

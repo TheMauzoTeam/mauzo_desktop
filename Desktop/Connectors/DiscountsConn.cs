@@ -35,6 +35,8 @@ namespace Desktop.Connectors
     /// servidor de API RESTful escrito en java.
     /// </summary>
     /// <remarks>@ant04x Antonio Izquierdo</remarks>
+    // FIXME: 08/06/2020 Yo no simplificaría el nombre: DiscountsConnector, o sólo Discounts, ya que está 
+    // bajo el namespace Desktop.Connectors
     class DiscountsConn
     {
         private readonly string mauzoUrl = Settings.Default.MauzoServer + "/api/discounts"; // TODO => Minuscula
@@ -47,6 +49,7 @@ namespace Desktop.Connectors
         {
             get
             {
+                // FIXME: 08/06/2020 Esto ya lo hemos comentado online, lo de crear un cliente y request siempre
                 // Iniciamos la conexión.
                 Uri baseUrl = new Uri(mauzoUrl + "/");
                 IRestClient client = new RestClient(baseUrl);
@@ -95,6 +98,7 @@ namespace Desktop.Connectors
 
             // Procesamos la respuesta de la petición.
             if (!response.IsSuccessful)
+                // FIXME: 08/06/2020 Creo que el nombre de esta función no hace honor a lo que hace
                 LoginConn.CalculateException(response, "No se ha encontrado el descuento");
         }
 

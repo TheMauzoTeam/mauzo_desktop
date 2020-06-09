@@ -46,6 +46,7 @@ namespace Desktop.Views.Dialogs
         /// Constructor de la ventana de error.
         /// </summary>
         /// <param name="message">Mensaje de error</param>
+        // FIXME: 08/06/2020 Podriais haberla separado un poco, ...
         public Error(string message)
         {
             // Definimos la ventana.

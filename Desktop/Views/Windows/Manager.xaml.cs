@@ -160,6 +160,7 @@ namespace Desktop.Views.Windows
 
                 // Lanzamos los datos a la vista, para que las dibuje con barras.
                 List<Inform> informs = new InformsConn().List;
+                // FIXME: 08/06/2020 No estoy seguro, pero apostaría que hay una manera mejor de crear e inicializar un mapa
                 ((BarSeries)mcChart.Series[0]).ItemsSource = new KeyValuePair<string, int>[] {
                     new KeyValuePair<string, int>("Diciembre", informs[11].NSales),
                     new KeyValuePair<string, int>("Noviembre", informs[10].NSales),
